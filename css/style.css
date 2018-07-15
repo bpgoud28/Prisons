@@ -1,0 +1,305 @@
+
+@font-face {
+	font-family: 'Swiss721BT-Roman';
+	src: url('../fonts/Swiss721BT-Roman.eot');
+	src: url('Swiss721BT-Roman.eot?#iefix') format('embedded-opentype'),
+		
+		url('../fonts/Swiss721BT-Roman.woff') format('woff'),
+		url('../fonts/Swiss721BT-Roman.ttf') format('truetype'),
+		url('../fonts/Swiss721BT-Roman.svg#Swiss721BT-Roman') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Swiss721BT-Bold';
+
+	src: url('../fonts/wiss721BT-Bold.eot');
+	src: url('wiss721BT-Bold.eot?#iefix') format('embedded-opentype'),
+		
+		url('../fonts/Swiss721BT-Bold.woff') format('woff'),
+		url('../fonts/Swiss721BT-Bold.ttf') format('truetype'),
+		url('../fonts/Swiss721BT-Bold.svg#Swiss721BT-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body{ 
+font-family: 'Swiss721BT-Roman';font-weight: normal; font-size: 13px; color: #383838;
+} 
+
+.background{ width: 100%; float: left; background: #fff;}
+.header{ width: 100%; float: left; background: rgba(255,255,255,0.7); margin: 5px 0px;}
+.header_nav{width: 100%; float: left;}
+.ts_logo{width: 100%; float: left;}
+.tsgovt_logo{ width: 90px;
+float: right;
+position: relative;top: 3px;
+}
+.ts_prisons{width: 100%; float: left;position: relative;
+top: 20px;left: 10px;}
+.ts_prisons .prisons_txt{color:#040095;float:left; width: 100%; font-size: 35px;text-shadow: 0 1px 0 #f1f1f1, 0 1px 0 #f1f1f1, 0 0px 0 #f1f1f1, 0 2px 0 #f1f1f1, 0 4px 0 #f1f1f1, 0 6px 1px rgba(255,255,255,.1), 0 0 5px rgba(255,255,255,.1), 0 1px 3px rgba(255,255,255,.3), 0 3px 5px rgba(255,255,255,.2), 0 5px 10px rgba(255,255,255,.25), 0 10px 10px rgba(255,255,255,.2), 0 20px 20px rgba(255,255,255,.15);}
+.prisons_logo{ width: 100%; float: left;}
+.prisons_logo .tsprisons_logo{ width: 90px; float: left;}
+.navigation{ float: left; width: 100%; background:#737373;}
+.banner{width: 100%; float: left;}
+
+/*--- Banner----*/
+
+.jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 111 css*/
+        .jssorb111 .i {position:absolute;color:#fff;font-family:"Helvetica neue",Helvetica,Arial,sans-serif;text-align:center;cursor:pointer;z-index:0;}
+        .jssorb111 .i .n {display:none;}
+        .jssorb111 .i .b {fill:#fff;stroke:#000;stroke-width:500;stroke-miterlimit:10;stroke-opacity:.5;}
+        .jssorb111 .i:hover .b {fill:#fea900;stroke:#fea900;stroke-width:6000;stroke-opacity:1;}
+        .jssorb111 .iav .b {fill:#000;stroke-width:6000;stroke-opacity:1;}
+        .jssorb111 .i.idn {opacity:.3;}
+        .jssorb111 .iav .n, .jssorb111 .i:hover .n {display:block;}
+
+        /*jssor slider thumbnail skin 121 css*/
+        .jssort121 .p {position:absolute;top:0;left:0;border-bottom:1px solid rgba(255,255,255,.2);box-sizing:border-box;color:#fff;background:rgba(0,0,0,.3);opacity:.9;}
+        .jssort121 .p .t {position:absolute;padding:10px;box-sizing:border-box;top:0;left:0;width:100%;height:100%;line-height:24px;overflow:hidden;}
+        .jssort121 .p .i {margin-right:10px;position:relative;top:0;left:0;width:60px;height:48px;border:none;float:left;}
+        .jssort121 .pav, .jssort121 .p:hover {color:#000;background:rgba(255,255,255,.7);}
+        .jssort121 .p:hover {opacity:.75;}
+        .jssort121 .pav, .jssort121 .p:hover.pdn {opacity:1;}
+        .jssort121 .ti {position:relative;font-size:13px;}
+        .jssort121 .d {position:relative;font-size:11px;}
+        
+/*--------Workrea--------*/
+.hovereffect {
+  width: 90%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #040095;    left: 10px;    border-radius: 15px;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding:20px 10px;background: rgba(0,0,0,0.6);
+}
+.hovereffect .mission_overlay{ background: #f4c20d;}
+.hovereffect .vision_overlay{ background: #029594;}
+.hovereffect .goal_overlay{ background: #4885ed;}
+.hovereffect .value_overlay{ background: #3cba54;}
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;font-family: 'Swiss721BT-Bold';
+}
+
+.hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+.hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.hovereffect:hover .abt_cntnt{ display: none;}
+.abt_cntnt{color: #f1f1f1;}
+
+.workarea{width: 100%; float: left;background: #fff;padding:50px 0px 40px;}
+.welcome{width: 100%; float: left; padding:15px 25px;position: relative;}
+.welcome h6{font-family: 'Swiss721BT-Bold'; font-size: 20px;width: 100%;
+float: left; color: #040095; margin: 0px 0px 20px 0px; }
+.welcome_cnt{ float: left; width: 100%;padding-left: 350px;
+padding-right: 35px;}
+.welcome_cnt p{ float: left; width: 100%; color: #737373; font-size: 14px;}
+.ad_pic{ width: 25%; float: left;position: absolute;
+top: 25px;
+left: 50px;}
+.item img{ width: 100%;
+height: 320px !important;}
+.carousel-indicators{ bottom: 0px !important;}
+
+.about_mre{ float: left; width: 100%;background:#f1f1f1;padding: 30px 0px;}
+.abt_wrkarea{float: left; width: 100%;padding: 20px 40px 30px;}
+.abt_wrkarea h6{font-family: 'Swiss721BT-Bold'; font-size: 20px;width: 100%;
+float: left; color: #040095; margin: 0px 0px 40px 0px; text-align: center;}
+.footer{ width: 100%; float: left;}
+.footer span{ text-align: center;
+width: 100%;
+float: right;
+color: #737373;
+padding: 15px 0px;
+position: relative;
+right: 40px;}
+
+
+/*-----About Us -----*/
+.inner_banner{ width: 100%; float: left;}
+.abt_wrkara{ float: left; width: 100%;margin: 40px 0px 35px;}
+.abtus_heading{float: left; width: 100%; }
+.abtus_heading h6{
+    font-family: 'Swiss721BT-Bold';
+font-size: 20px;
+width: 100%;
+float: left;
+color: #040095;
+margin: 0px 0px 20px 0px;text-align: center;
+}
+.abtus_heading p{width: 100%; float: left;color: #737373;
+font-size: 14px;    text-align: center;}
+.about_cntnt{ width: 100%; float: left; padding: 20px 20px 15px 20px;}
+.about_cntnt p{width: 100%; float: left;color: #737373;
+font-size: 14px;margin-bottom: 10px;}
+.about_cntnt b{font-family: 'Swiss721BT-Bold';width: 100%;float: left;font-weight: normal;
+font-size: 15px;
+color: #525252;margin-bottom: 20px;}
+.tab_wrkarea{ width: 100%; float: left; padding: 0px 15px;margin-top: 30px;}
+.jssort121{ width: 200px !important;}
+.z-container{ min-height: 350px !important; max-height: 350px !important; overflow-y: scroll !important;}
+@media screen and (max-width:1199px) and (min-width:992px){
+  .ts_prisons .prisons_txt{ font-size: 29px;}  
+    .ts_prisons{top: 25px;
+left: 0px;}
+    .ad_pic{    width: 270px;
+    left: 30px;}
+    .welcome_cnt{    padding-left: 310px;padding-right:0px; }
+}
+@media screen and (max-width:992px) and (min-width:768px){
+  .ts_prisons .prisons_txt{ font-size: 24px;}  
+    .ts_prisons{top: 30px;
+left: 0px;}
+    .prison_padding{ padding: 0px;}
+      .ad_pic{    width: 270px;
+    left: 30px;}
+       .welcome_cnt{    padding-left: 310px;padding-right:0px; }
+}
+@media screen and (max-width:767px)and (min-width:474px) {
+    .jssort121{ display: none;}
+    .ts_logo{ display: none;}
+    .ts_prisons{padding-left:75px; }
+    .prisons_logo{    margin-top: -30px;}
+    .ts_prisons .prisons_txt{    font-size: 17px;}
+    .header{    margin: 5px 0px 0px;}
+    .prisons_logo .tsprisons_logo{    width: 80px;}
+    .ts_prisons{    top: 25px;}
+}
+
+@media screen and (max-width:767px){
+    .ad_pic{ display: none;}
+    .welcome_cnt{ padding: 0px;}
+    .workarea{    padding: 25px 0px 20px;}
+    .about_mre{    padding: 15px 0px 0px;}
+    .hovereffect{    left: 50%;
+    margin-left: -155px;
+    margin-bottom: 30px;    width: 290px;}
+    .abt_wrkarea{     padding: 20px 0px 20px;}
+    .about_cntnt{ padding: 0px;}
+}
+@media screen and (max-width:1199px)and (min-width:992px) {
+    
+    .container-tab{ width: 100%;}
+    .hovereffect{ width: 100%; left: 0px;}
+    .abt_wrkarea{    padding: 20px 20px 30px;}
+}
+@media screen and (max-width:991px)and (min-width:768px) {
+    .hovereffect{ margin-bottom: 40px;}
+    .about_mre{    padding: 30px 0px 0px;}
+}
+@media screen and (max-width:473px) {
+  .jssort121{ display: none;}
+    .ts_logo{ display: none;}
+    .ts_prisons{padding-left:75px; }
+    .prisons_logo{    margin-top: -55px;}
+    .ts_prisons .prisons_txt{    font-size: 17px;}
+    .header{    margin: 5px 0px 0px;}
+    .prisons_logo .tsprisons_logo{    width: 80px;}
+    .ts_prisons{    top: 10px;}   
+    .hovereffect{    left: 50%;
+    margin-left: -135px;
+    margin-bottom: 30px;    width: 270px;}
+}
+
+.z-container{ min-height: 350px !important; max-height: 350px !important; overflow-y: scroll !important;}
+.panel-info > .panel-heading {
+  background-image: none !important;
+  background: #fff !important;
+  color: #333 !important;
+  font-size: 14px;
+}
+.panel-body h4{ width: 100%; color: #737373; font-size: 15px; float: left;}
+.contactusworkarea {
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  padding: 15px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+.listofjails {
+  margin: 20px -15px 0px;
+}
