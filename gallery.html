@@ -1,6 +1,5 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html class="" lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
 <title>TS Prisons</title>
@@ -17,7 +16,8 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
         appendChild(msViewportStyle);
 }
 </script>
-    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<link rel="stylesheet" type="text/css" href="index_files/demos.css">
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <!-----------------bootstrap-------------------------------->
@@ -31,12 +31,15 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <!----navigation menu---->
 <link href="css/ace-responsive-menu.css" rel="stylesheet" type="text/css"/>
 <script src="js/ace-responsive-menu.js" type="text/javascript"></script>
-<link href="css/elastic_grid.css" rel="stylesheet" type="text/css"/>
-<link href="css/demo.css" rel="stylesheet" type="text/css"/>
-</head>
-<body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+<script src="index_files/jquery_002.js"></script>
+<script src="index_files/jquery.js"></script>
 
-    <div class="background">
+<script src="js/easy-responsive-tabs.js" type="text/javascript"></script>
+<link href="css/easy-responsive-tabs.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">.fancybox-margin{margin-right:17px;}</style></head>
+<body>
+
+<div class="background">
         <div class="header">
             <div class="container">
                  <div class="row">
@@ -149,137 +152,189 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     </nav>  
             </div>
         </div>
-        
-        <div class="inner_banner">
-            <img src="images/about.png" alt="" class="img-responsive"/>
-        </div>
-        <!----About Us workarea----->
-        <div class="abt_wrkara">
-            <div class="container">
-                  <div class="row">
-                      <div id="elastic_grid_demo"></div>
-        </div>
+    
+    <div class="gallery_banner">
+        <img src="images/gallery.jpg" alt="" class="img-responsive"/>
+    </div>
+    <div class="gallery_wrkarea">
+        <div class="container">
+            <div class="gallery_area">
+                <h6>Gallery</h6>
+   <div id="horizontalTab">
+<ul class="resp-tabs-list">
+<li>Cherlapally</li>
+<li>Nizambad</li>
+
+</ul>
+<div class="resp-tabs-container">
+<div>
+<div id="galleryTab" class="cf">
+  <a data-rel="all" href="javascript:;" class="filter active fliter_color">View all</a>
+  <a data-rel="carpentary" href="javascript:;" class="filter fliter_color">Carpentary</a>
+  <a data-rel="cands" href="javascript:;" class="filter fliter_color">Cleaners and Soaps</a>
+  <a data-rel="commodities" href="javascript:;" class="filter fliter_color">Commodities</a>
+</div>
+<div class="galleryWrap cf">
+<a class="fancybox imgContainer" href="images/large/1c.jpg" data-fancybox-group="gallery" data-filter="carpentary" style="display: block;"><img src="images/large/1c.jpg"></a>
+<a class="fancybox imgContainer" href="images/large/2c.jpg" data-fancybox-group="gallery" data-filter="carpentary" style="display: block;"><img src="images/large/2c.jpg" ></a>
+<a class="fancybox imgContainer" href="images/large/3c.JPG" data-fancybox-group="gallery" data-filter="carpentary" style="display: block;"><img src="images/large/3c.JPG" ></a>
+<a class="fancybox imgContainer" href="images/large/4c.JPG" data-fancybox-group="gallery" data-filter="carpentary" style="display: block;"><img src="images/large/4c.JPG" ></a>
+<a class="fancybox imgContainer" href="images/large/5c.JPG" data-fancybox-group="gallery" data-filter="carpentary" style="display: block;"><img src="images/large/5c.JPG" ></a>
+
+<a class="fancybox imgContainer" href="images/large/1s.JPG" data-fancybox-group="gallery" data-filter="cands" style="display: block;"><img src="images/large/1s.JPG" ></a>
+<a class="fancybox imgContainer" href="images/large/2s.JPG" data-fancybox-group="gallery" data-filter="cands" style="display: block;"><img src="images/large/2s.JPG" ></a>
+<a class="fancybox imgContainer" href="images/large/3s.JPG" data-fancybox-group="gallery" data-filter="cands" style="display: block;"><img src="images/large/3s.JPG" ></a>
+<a class="fancybox imgContainer" href="images/large/4s.JPG" data-fancybox-group="gallery" data-filter="cands" style="display: block;"><img src="images/large/4s.JPG" ></a>
+<a class="fancybox imgContainer" href="images/large/5s.JPG" data-fancybox-group="gallery" data-filter="cands" style="display: block;"><img src="images/large/5s.JPG" ></a>
+<a class="fancybox imgContainer" href="images/large/6s.JPG" data-fancybox-group="gallery" data-filter="cands" style="display: block;"><img src="images/large/6s.JPG" ></a>
+
+<a class="fancybox imgContainer" href="images/large/1com.JPG" data-fancybox-group="gallery" data-filter="commodities" style="display: block;"><img src="images/large/1com.JPG" ></a>
+<a class="fancybox imgContainer" href="images/large/2com.JPG" data-fancybox-group="gallery" data-filter="commodities" style="display: block;"><img src="images/large/2com.JPG" ></a>
+<a class="fancybox imgContainer" href="images/large/3com.JPG" data-fancybox-group="gallery" data-filter="commodities" style="display: block;"><img src="images/large/3com.JPG" ></a>
+</div>
+</div>
+<div>
+ <div id="galleryTab" class="cf">
+  <a data-rel="all" href="javascript:;" class="filter1 active fliter_color">View all</a>
+  <a data-rel="Engineering" href="javascript:;" class="filter1 fliter_color">Engineering</a>
+  <a data-rel="ml" href="javascript:;" class="filter1 fliter_color">Mechine Loom</a>
+  <a data-rel="handloom" href="javascript:;" class="filter1 fliter_color">Handlooms</a>
+</div>
+<div class="galleryWrap cf">
+<a class="fancybox1 imgContainer" href="images/large/1e.JPG" data-fancybox-group="gallery1" data-filter="Engineering"><img src="images/large/1e.JPG"></a>
+<a class="fancybox1 imgContainer" href="images/large/2e.JPG" data-fancybox-group="gallery1" data-filter="Engineering"><img src="images/large/2e.JPG"></a>
+<a class="fancybox1 imgContainer" href="images/large/3e.JPG" data-fancybox-group="gallery1" data-filter="Engineering"><img src="images/large/3e.JPG"></a>
+<a class="fancybox1 imgContainer" href="images/large/4e.JPG" data-fancybox-group="gallery1" data-filter="Engineering"><img src="images/large/4e.JPG"></a>
+<a class="fancybox1 imgContainer" href="images/large/5e.JPG" data-fancybox-group="gallery1" data-filter="Engineering"><img src="images/large/5e.JPG"></a>
+<a class="fancybox1 imgContainer" href="images/large/6e.JPG" data-fancybox-group="gallery1" data-filter="Engineering"><img src="images/large/6e.JPG"></a>
+
+<a class="fancybox1 imgContainer" href="images/large/1m.JPG" data-fancybox-group="gallery1" data-filter="ml"><img src="images/large/1m.JPG"></a>
+<a class="fancybox1 imgContainer" href="images/large/2m.JPG" data-fancybox-group="gallery1" data-filter="ml"><img src="images/large/2m.JPG"></a>
+<a class="fancybox1 imgContainer" href="images/large/3m.JPG" data-fancybox-group="gallery1" data-filter="ml"><img src="images/large/3m.JPG"></a>
+<a class="fancybox1 imgContainer" href="images/large/4m.JPG" data-fancybox-group="gallery1" data-filter="ml"><img src="images/large/4m.JPG"></a>
+<a class="fancybox1 imgContainer" href="images/large/5m.JPG" data-fancybox-group="gallery1" data-filter="ml"><img src="images/large/5m.JPG"></a>
+
+<a class="fancybox1 imgContainer" href="images/large/1h.JPG" data-fancybox-group="gallery1" data-filter="handloom"><img src="images/large/1h.JPG"></a>
+<a class="fancybox1 imgContainer" href="images/large/2h.JPG" data-fancybox-group="gallery1" data-filter="handloom"><img src="images/large/2h.JPG"></a>
+<a class="fancybox1 imgContainer" href="images/large/3h.JPG" data-fancybox-group="gallery1" data-filter="handloom"><img src="images/large/3h.JPG"></a>
+</div>
+</div>
+ 
+</div>
+
+</div>
             </div>
+  </div>  
+   </div> 
+     <div class="floater" data-toggle="modal" data-target="#myModal">
+           
+                <img src="images/message.png" alt=""/>
+          
         </div>
-        
-        
-        <div class="footer">
+             <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+      <button type="button" class="close mess_close" data-dismiss="modal">&times;</button>
+          <div class="dir_mess">
+              <h2>Directors Message</h2>  
+            
+              <div class="director">
+                  <img src="images/Image.jpg" alt="" class="dir_img"/>   
+                  <div class="message">
+                      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+    <div class="footer">
             <div class="container">
                 <span>
-© 2015 All Rights Reserved. | TS Prison Department </span>
+                    © 2015 All Rights Reserved. | TS Prison Department </span>
             </div>
         </div>
-    </div>
- <script type="text/javascript">
+</div> 
+
+    
+   
+<script>
+jQuery(function($){
+  $(".fancybox").fancybox({
+    modal: true,
+    helpers : { buttons: { } }
+  });
+  $(".filter").on("click", function () {
+    var $this = $(this);
+    // if we click the active tab, do nothing
+    if (!$this.hasClass("active")) {
+      $(".filter").removeClass("active");
+      $this.addClass("active"); // set the active tab
+      var $filter = $this.data("rel"); // get the data-rel value from selected tab and set as filter
+      $filter == 'all' ? // if we select "view all", return to initial settings and show all
+        $(".fancybox").attr("data-fancybox-group", "gallery").not(":visible").fadeIn() 
+        : // otherwise
+        $(".fancybox").fadeOut(0).filter(function () { 
+          return $(this).data("filter") == $filter; // set data-filter value as the data-rel value of selected tab
+        }).attr("data-fancybox-group", $filter).fadeIn(1000); // set data-fancybox-group and show filtered elements
+    } // if
+  }); // on
+}); // ready
+</script>
+  <script type="text/javascript">
          $(document).ready(function () {
              $("#respMenu").aceResponsiveMenu({
-                 resizeWidth: '768', // Set the same in Media query       
+                 resizeWidth: '750', // Set the same in Media query       
                  animationSpeed: 'fast', //slow, medium, fast
                  accoridonExpAll: false //Expands all the accordion menu on click
              });
          });
 	</script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/classie.js"></script>
-<!--- uncompress-->
+        <script>
+$(document).ready(function () {
+$('#horizontalTab').easyResponsiveTabs({
+type: 'default', //Types: default, vertical, accordion           
+width: 'auto', //auto or any width like 600px
+fit: true,   // 100% fit in a container
+closed: 'accordion', // Start closed if in accordion view
+activate: function(event) { // Callback function if tab is switched
+var $tab = $(this);
+var $info = $('#tabInfo');
+var $name = $('span', $info);
+$name.text($tab.text());
+$info.show();
+}
+});
 
-<script type="text/javascript" src="js/jquery.elastislide.js"></script>
-<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-<script type="text/javascript" src="js/elastic_grid.js"></script>
-
-<!-- compress version
-<script type="text/javascript" src="js/elastic_grid.min.js"></script>
--->
-<script type="text/javascript">
-    $(function(){
-        $("#elastic_grid_demo").elastic_grid({
-            'showAllText' : 'All',
-            'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
-            'hoverDirection': true,
-            'hoverDelay': 0,
-            'hoverInverse': false,
-            'expandingSpeed': 500,
-            'expandingHeight': 500,
-            'items' :
-            [
-                {
-                    'title'         : 'Carpentary',
-                    'description'   : 'Telangana State Prisons and Correctional Services Department confines, manages and provides a safe, secure and humane environment to prisoners both under trial and convicted, by utilizing a trained professional Prison Force',
-                    'thumbnail'     : ['images/small/1.jpg','images/small/2.jpg', 'images/small/3.jpg', 'images/small/4.jpg', 'images/small/5.jpg'],
-                    'large'         : ['images/large/1c.jpg','images/large/2c.JPG', 'images/large/3c.JPG', 'images/large/4c.JPG', 'images/large/5c.JPG'],
-                    'img_title'     : ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
-                    'button_list'   :
-                    [
-                  
-                    ],
-                    'tags'          : ['Cherlapally','chanchalguda']
-                },
-                {
-                    'title'         : 'Cleaners and Soaps',
-                    'description'   : 'Telangana State Prisons and Correctional Services Department confines, manages and provides a safe, secure and humane environment to prisoners both under trial and convicted, by utilizing a trained professional Prison Force',
-                    'thumbnail'     : ['images/small/1ssl.JPG', 'images/small/2ss.JPG', 'images/small/3ss.JPG', 'images/small/4ss.JPG', 'images/small/5ss.JPG', 'images/small/6ss.JPG'],
-                    'large'         : ['images/large/1s.JPG', 'images/large/2s.JPG', 'images/large/3s.JPG', 'images/large/4s.JPG', 'images/large/5s.JPG', 'images/large/6s.JPG'],
-                    'img_title'     : ['jquery elastic grid 6 ', 'jquery elastic grid 7 ', 'jquery elastic grid 8', 'jquery elastic grid 9', 'jquery elastic grid 9'],
-                    'button_list'   :
-                    [
-                     
-                    ],
-                    'tags'          : ['Cherlapally','chanchalguda']
-                },
-                {
-                    'title'         : 'Commodities',
-                    'description'   : 'Telangana State Prisons and Correctional Services Department confines, manages and provides a safe, secure and humane environment to prisoners both under trial and convicted, by utilizing a trained professional Prison Force',
-                    'thumbnail'     : ['images/small/1com.JPG','images/large/2com.JPG', 'images/large/3com.JPG'],
-                    'large'         : ['images/large/1com.JPG','images/large/2com.JPG', 'images/large/3com.JPG'],
-                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                    'button_list'   :
-                    [
-              
-                    ],
-                    'tags'          : ['Cherlapally', 'Nizambad']
-                },
-                {
-                    'title'         : 'Engineering',
-                    'description'   : 'Telangana State Prisons and Correctional Services Department confines, manages and provides a safe, secure and humane environment to prisoners both under trial and convicted, by utilizing a trained professional Prison Force',
-                    'thumbnail'     : ['images/small/1e.JPG', 'images/large/2e.JPG', 'images/large/3e.JPG', 'images/large/4e.JPG', 'images/large/5e.JPG', 'images/large/6e.JPG'],
-                    'large'         : ['images/large/1e.JPG', 'images/large/2e.JPG', 'images/large/3e.JPG', 'images/large/4e.JPG', 'images/large/5e.JPG', 'images/large/6e.JPG'],
-                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                    'button_list'   :
-                    [
-                    
-                    ],
-                    'tags'          : ['Adilabad','chanchalguda','Nizambad']
-                },
-                {
-                    'title'         : 'Mechine Loom',
-                    'description'   : 'Telangana State Prisons and Correctional Services Department confines, manages and provides a safe, secure and humane environment to prisoners both under trial and convicted, by utilizing a trained professional Prison Force',
-                    'thumbnail'     : ['images/small/1m.JPG', 'images/large/2m.JPG', 'images/large/3m.JPG', 'images/large/4m.JPG','images/large/5m.JPG'],
-                    'large'         : ['images/large/1m.JPG', 'images/large/2m.JPG', 'images/large/3m.JPG', 'images/large/4m.JPG','images/large/5m.JPG'],
-                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                    'button_list'   :
-                    [
-                        
-                    ],
-                    'tags'          : ['Cherlapally']
-                },
-                {
-                    'title'         : 'Handlooms',
-                    'description'   : 'Telangana State Prisons and Correctional Services Department confines, manages and provides a safe, secure and humane environment to prisoners both under trial and convicted, by utilizing a trained professional Prison Force',
-                    'thumbnail'     : ['images/small/1h.JPG','images/large/2h.JPG', 'images/large/3h.JPG', 'images/large/4h.JPG'],
-                    'large'         : ['images/large/1h.JPG','images/large/2h.JPG', 'images/large/3h.JPG', 'images/large/4h.JPG'],
-                    'img_title'     : ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
-                    'button_list'   :
-                    [
-                      
-                    ],
-                    'tags'          : ['Cherlapally','Adilabad','Nizambad']
-                }
-                
-
-            ]
-        });
-    });
+});
 </script>
-   
-</body>
-</html>
+
+<script>
+jQuery(function($){
+  $(".fancybox1").fancybox({
+    modal: true,
+    helpers : { buttons: { } }
+  });
+  $(".filter1").on("click", function () {
+    var $this = $(this);
+    // if we click the active tab, do nothing
+    if (!$this.hasClass("active")) {
+      $(".filter1").removeClass("active");
+      $this.addClass("active"); // set the active tab
+      var $filter = $this.data("rel"); // get the data-rel value from selected tab and set as filter
+      $filter == 'all' ? // if we select "view all", return to initial settings and show all
+        $(".fancybox1").attr("data-fancybox-group", "gallery1").not(":visible").fadeIn() 
+        : // otherwise
+        $(".fancybox1").fadeOut(0).filter(function () { 
+          return $(this).data("filter") == $filter; // set data-filter value as the data-rel value of selected tab
+        }).attr("data-fancybox-group", $filter).fadeIn(1000); // set data-fancybox-group and show filtered elements
+    } // if
+  }); // on
+}); // ready
+</script>
+
+</body></html>
