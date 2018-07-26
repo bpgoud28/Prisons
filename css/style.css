@@ -22,6 +22,16 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'glyphicons-halflings-regular';
+
+	src: url('../fonts/glyphicons-halflings-regular.eot');
+	src: url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+		
+		url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+	font-weight: normal;
+	font-style: normal;
+}
 body{ 
 font-family: 'Swiss721BT-Roman';font-weight: normal; font-size: 13px; color: #383838;
 } 
@@ -32,14 +42,11 @@ font-family: 'Swiss721BT-Roman';font-weight: normal; font-size: 13px; color: #38
 .ts_logo{width: 100%; float: left;}
 .tsgovt_logo{ width: 90px;
 float: right;
-position: relative;top: -1px;right: -110px;
+position: relative;top: 3px;
 }
 .ts_prisons{width: 100%; float: left;position: relative;
 top: 20px;left: 10px;}
-.ts_prisons .prisons_txt{color:#040095;float:left; width: 100%; font-size: 35px;text-shadow: 0 1px 0 #f1f1f1, 0 1px 0 #f1f1f1, 0 0px 0 #f1f1f1, 0 2px 0 #f1f1f1, 0 4px 0 #f1f1f1, 0 6px 1px rgba(255,255,255,.1), 0 0 5px rgba(255,255,255,.1), 0 1px 3px rgba(255,255,255,.3), 0 3px 5px rgba(255,255,255,.2), 0 5px 10px rgba(255,255,255,.25), 0 10px 10px rgba(255,255,255,.2), 0 20px 20px rgba(255,255,255,.15);text-align: center;
-    font-weight: 500;
-    font-family: fantasy;}
-.prisons_logo{ width: 100%; float: left;margin-left: -100px;}
+.ts_prisons .prisons_txt{color:#040095;float:left; width: 100%; font-size: 35px;text-shadow: 0 1px 0 #f1f1f1, 0 1px 0 #f1f1f1, 0 0px 0 #f1f1f1, 0 2px 0 #f1f1f1, 0 4px 0 #f1f1f1, 0 6px 1px rgba(255,255,255,.1), 0 0 5px rgba(255,255,255,.1), 0 1px 3px rgba(255,255,255,.3), 0 3px 5px rgba(255,255,255,.2), 0 5px 10px rgba(255,255,255,.25), 0 10px 10px rgba(255,255,255,.2), 0 20px 20px rgba(255,255,255,.15);}.prisons_logo{ width: 100%; float: left;}
 .prisons_logo .tsprisons_logo{ width: 90px; float: left;}
 .navigation{ float: left; width: 100%; background:#737373;}
 .banner{width: 100%; float: left;}
@@ -75,8 +82,8 @@ top: 20px;left: 10px;}
         .jssort121 .p:hover {opacity:.75;}
         .jssort121 .pav, .jssort121 .p:hover.pdn {opacity:1;}
         .jssort121 .ti {position:relative;font-size:13px;}
-        .jssort121 .d {position:relative;font-size:11px;color: #ff9600;}
-        .jssort121 .dd {position:relative;font-size:11px;color: #ec0000;}
+        .jssort121 .d {position:relative;font-size:11px;color: #088bee;}
+        .jssort121 .dd {position:relative;font-size:11px;color: #1dca57;}
 /*--------Workrea--------*/
 .hovereffect {
   width: 90%;
@@ -292,7 +299,7 @@ left: 0px;}
 .panel-body p span{width: 100%; float: left;font-size: 13px; margin-bottom:3px;}
 .panel-info > .panel-heading{ background-image: none !important;
 
-font-size: 14px;background: #ccc !important;
+font-size: 14px;background: #eee !important;
 color: #333 !important;}
 
 .panel-body h4{ width: 100%; color: #737373; font-size: 15px; float: left;}
@@ -762,10 +769,16 @@ height: 200px;
 	cursor: default;
 }
 
-.floater{ right: 0px ;position: fixed;top:320px; background: #040095; z-index: 2;}
+.floater{ right: 0px ;position: fixed;top:320px; background: #040095; z-index: 2;cursor: pointer;}
 .floater img{padding: 8px;
 width: 40px;}
-
+.newsnote{    right: 0px;
+    position: fixed;
+    top: 230px;
+    background: #040095;
+    z-index: 2;cursor: pointer;}
+.newsnote img{padding: 8px;
+width: 40px;}
 .dir_mess{ width: 100%;}
 .dir_mess h2{width: 100%;
 text-align: center;font-family: 'Swiss721BT-Bold';font-weight: normal;
@@ -785,7 +798,7 @@ margin-top: 0px; }
 .modal-content{padding: 20px;width: 100%;
     float: left;}
 
-.quicknote{ right: 0px ;position: fixed;top:275px; background: #040095; z-index: 2;}
+.quicknote{ right: 0px ;position: fixed;top:275px; background: #040095; z-index: 2;cursor: pointer;}
 .quicknote img{padding: 8px;
 width: 40px;}
 .qucik_form{ background: #fff; right: 0px;}
@@ -846,11 +859,13 @@ color: #040095;
 margin: 0px 0px 20px 0px;
 text-align: center;}
 
-.ddd {border:1px solid #337ab76b;}
-.dddd {    margin-top: -25px;
+.ddd {border:1px solid #7777774f;margin-top: 40px;}
+.ddds {border:1px solid #7777774f;margin-bottom: 43px !important;}
+.dddd {margin-top: -30px;
     margin-left: 15px;
-    color: #040095;
-    font-size: 20px;}
+    color: #737373;
+    font-size: 16px;
+    margin-bottom: -20px;}
 /*---timeline-code---*/
 .timeline_sec{ width: 100%; float: left;background-color:#e8e8e8;}
 .timeline_sec h6{
@@ -864,7 +879,10 @@ text-align: center;text-shadow: 0 1px 0 #f1f1f1, 0 1px 0 #f1f1f1, 0 0px 0 #f1f1f
 .page-section{float:left; width: 100%;margin-top: 40px;}
 
 /*-------------------------Admin Setup-------------*/
-.admin_wrkarea{ width: 100%; float: left;}
+.admin_wrkarea{ width: 100%; float: left; margin-top:10px;}
+.about_page {font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;}
 .admin_wrkarea h6{font-family: 'Swiss721BT-Bold';
 font-size: 20px;
 width: 100%;
@@ -889,4 +907,70 @@ text-align: center;}
 .card-image {
 	width: 25%;
 	float: left;
+}
+.panel-info {
+    border-color: #ccc !important;
+}
+.panel-info > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ccc !important;
+}
+.ddd_tabs li {border-right: 1px solid;}
+ul.ddd_tabs {
+	width: 100%;
+    float: left;
+}
+.panel-headings {padding: 10px 15px 0px !important;}
+.panel-headings h4 {position: relative;
+    top: 3px;}
+.horizontal_Tab {margin-top:40px !important;}
+.arrow_control {    
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    top: -1px;
+}
+.background_content {
+	float: left;
+    width: 100%;
+    background: #eeeeee3b;
+    padding: 30px;
+    position: relative;
+    top: -3px;
+}
+.background_content2 {
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    position: relative;
+    top: -3px;
+}
+.background_content3 {
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    margin-left: 1px !important;
+}
+.resp-tabs-contant {
+	min-height: 817px !important;
+	width: 80% !important;
+
+}
+.tabs_content {
+    width: 20% !important;
+}
+.resp-tabs-contants {
+	min-height: 664px !important;
+	width: 80% !important;
+
+}
+.responsive_tabs_content {
+    min-height: 290px !important;
+    width: 80% !important;
+}
+.margin_news {
+	    margin-right: 5px;
+}
+.demo1 {
+	height:auto !important;
 }
