@@ -38,14 +38,17 @@ font-family: 'Swiss721BT-Roman';font-weight: normal; font-size: 13px; color: #38
 .background{ width: 100%; float: left; background: #fff;}
 .header{ width: 100%; float: left; background: rgba(255,255,255,0.7); margin: 5px 0px;}
 .header_nav{width: 100%; float: left;}
-.ts_logo{width: 100%; float: left;}
+.ts_logo{width: 100%; float: left;position: relative;
+    left: 40px;}
 .tsgovt_logo{ width: 90px;
 float: right;
 position: relative;top: 3px;
 }
 .ts_prisons{width: 100%; float: left;position: relative;
-top: 30px;left: 10px;}
-.ts_prisons .prisons_txt{text-align: center;color:#040095;float:left; width: 100%; font-size: 35px;text-shadow: 0 1px 0 #f1f1f1, 0 1px 0 #f1f1f1, 0 0px 0 #f1f1f1, 0 2px 0 #f1f1f1, 0 4px 0 #f1f1f1, 0 6px 1px rgba(255,255,255,.1), 0 0 5px rgba(255,255,255,.1), 0 1px 3px rgba(255,255,255,.3), 0 3px 5px rgba(255,255,255,.2), 0 5px 10px rgba(255,255,255,.25), 0 10px 10px rgba(255,255,255,.2), 0 20px 20px rgba(255,255,255,.15);}.prisons_logo{ width: 100%; float: left;}
+top: 20px;left:50px;}
+.ts_prisons .prisons_txt{color:#040095;float:left; width: 100%; font-size: 37px;text-shadow: 0 1px 0 #f1f1f1, 0 1px 0 #f1f1f1, 0 0px 0 #f1f1f1, 0 2px 0 #f1f1f1, 0 4px 0 #f1f1f1, 0 6px 1px rgba(255,255,255,.1), 0 0 5px rgba(255,255,255,.1), 0 1px 3px rgba(255,255,255,.3), 0 3px 5px rgba(255,255,255,.2), 0 5px 10px rgba(255,255,255,.25), 0 10px 10px rgba(255,255,255,.2), 0 20px 20px rgba(255,255,255,.15);}
+.prisons_logo{ width: 100%; float: left;position: relative;
+    left: -70px;}
 .prisons_logo .tsprisons_logo{ width: 90px; float: left;}
 .navigation{ float: left; width: 100%; background:#737373;}
 .banner{width: 100%; float: left;}
@@ -229,7 +232,7 @@ color: #525252;margin-bottom: 20px;}
 .jssort121{ width: 190px !important;}
 .z-container{ min-height: 350px !important; max-height: 350px !important; overflow-y: scroll !important;}
 @media screen and (max-width:1199px) and (min-width:992px){
-  .ts_prisons .prisons_txt{ font-size: 29px;}  
+ 
     .ts_prisons{top: 25px;
 left: 0px;}
     .ad_pic{    width: 270px;
@@ -237,9 +240,9 @@ left: 0px;}
     .welcome_cnt{    padding-left: 310px;padding-right:0px; }
 }
 @media screen and (max-width:992px) and (min-width:768px){
-  .ts_prisons .prisons_txt{ font-size: 24px;}  
-    .ts_prisons{top: 30px;
-left: 0px;}
+  .ts_prisons .prisons_txt{ font-size: 30px;}  
+    .ts_prisons{top:25px;
+left: 5px;}
     .prison_padding{ padding: 0px;}
       .ad_pic{    width: 270px;
     left: 30px;}
@@ -249,11 +252,11 @@ left: 0px;}
     .jssort121{ display: none;}
     .ts_logo{ display: none;}
     .ts_prisons{padding-left:75px; }
-    .prisons_logo{    margin-top: -30px;}
-    .ts_prisons .prisons_txt{    font-size: 17px;}
+    .prisons_logo{    margin-top: -35px;    left: -5px;}
+    .ts_prisons .prisons_txt{    font-size: 20px;}
     .header{    margin: 5px 0px 0px;}
     .prisons_logo .tsprisons_logo{    width: 80px;}
-    .ts_prisons{    top: 25px;}
+    .ts_prisons{    top: 25px;left: 0px;}
 }
 
 @media screen and (max-width:767px){
@@ -280,8 +283,8 @@ left: 0px;}
 @media screen and (max-width:473px) {
   .jssort121{ display: none;}
     .ts_logo{ display: none;}
-    .ts_prisons{padding-left:75px; }
-    .prisons_logo{    margin-top: -55px;}
+    .ts_prisons{padding-left:80px; left: 0px;  min-height:50px;}
+    .prisons_logo{    margin-top: -55px; left: 0px;}
     .ts_prisons .prisons_txt{    font-size: 17px;}
     .header{    margin: 5px 0px 0px;}
     .prisons_logo .tsprisons_logo{    width: 80px;}
@@ -884,10 +887,12 @@ text-align: center;text-shadow: 0 1px 0 #f1f1f1, 0 1px 0 #f1f1f1, 0 0px 0 #f1f1f
 .page-section{float:left; width: 100%;margin-top: 40px;}
 
 /*-------------------------Admin Setup-------------*/
-.admin_wrkarea{ width: 100%; float: left; margin-top:10px;}
+.admin_wrkarea{ width: 100%; float: left; margin-top:25px;margin-bottom: 25px;}
 .about_page {font-size: 14px;
     text-align: center;
-    margin-bottom: 20px;}
+    margin-bottom:30px;float: left;
+
+margin-top: 20px;}
 .admin_wrkarea h6{font-family: 'Swiss721BT-Bold';
 font-size: 20px;
 width: 100%;
@@ -920,7 +925,7 @@ text-align: center;}
 .panel-info > .panel-heading + .panel-collapse > .panel-body {
     border-top-color: #ccc !important;
 }
-.ddd_tabs li {border-right: 1px solid;}
+.ddd_tabs li {border-right: 1px solid #ccc;}
 ul.ddd_tabs {
 	width: 100%;
     float: left;
@@ -1031,9 +1036,22 @@ ul.ddd_tabs {
 	margin-top:10px;
 }
 .resp-vtabs .resp-tab-content {
-	margin-left: 40px;
-    margin-right: 40px;
+	padding: 30px;
 }
+.resp-vtabs .resp-tab-content p{ color: #737373; margin-bottom: 10px;}
+.resp-vtabs .resp-tab-content b{font-family: 'Swiss721BT-Bold';
+
+color: #565656;
+
+font-size: 16px;
+
+font-weight: normal;
+
+margin-bottom: 15px;
+
+float: left;
+
+width: 100%;}
 .panel-group .panel {
 	margin-bottom:20px;
 }
@@ -1041,6 +1059,133 @@ ul.ddd_tabs {
 	background: #7777774f;
     padding: 10px;
 }
+
+.book_floter{ right: 0px;
+position: fixed;
+top:205px;
+background: #040095;
+z-index: 2;
+cursor: pointer;}
+.bookThumb{
+padding:6px;
+width: 40px;}
+
+.navbar-nav > li > a {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.mainmenu {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0;
+	border: 0px !important;
+}
+.navbar-nav > li:last-child > a {
+
+    margin-right: 0px;
+}
+.dropdown-menu {
+    padding: 0px 0; 
+    margin: 0 0 0; 
+    border: 0px solid transition !important;
+	border: 0px solid rgba(0,0,0,.15);	
+	border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+
+}
+/*=-====Main Menu=====*/
+.navbar-nav .open .dropdown-menu > li > a {padding: 16px 15px 16px 25px;
+}
+.header_bottom { background: #0071ba }
+.header_area .header_bottom .mainmenu a , .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 16px 15px;
+	font-family: 'Roboto', sans-serif;
+}
+.header_area .mainmenu .active a,
+.header_area .mainmenu .active a:focus,
+.header_area .mainmenu .active a:hover,
+.header_area .mainmenu li a:hover,
+.header_area .mainmenu li a:focus ,
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    color: #0071ba;
+    background: #54c6d4;
+    outline: 0;
+}
+/*-----./ Main Menu-----*/
+
+.navbar-default .navbar-toggle { border-color: #fff } /*Toggle Button*/
+.navbar-default .navbar-toggle .icon-bar { background-color: #fff } /*Toggle Button*/
+
+/*==========Sub Menu=v==========*/
+.mainmenu .collapse ul > li:hover > a{background: #fece70;color: #fff;}
+.mainmenu .collapse ul ul > li:hover > a, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{background: #fece70;color: #fff;}
+.mainmenu .collapse ul ul ul > li:hover > a{background: #fece70;color: #fff;}
+.nav > li > a:hover, .nav > li > a:focus{background: #fece70;color: #fff;}
+.mainmenu .collapse ul ul, .mainmenu .collapse ul ul.dropdown-menu{background: rgba(51,51,51,0.7);}
+.mainmenu .collapse ul ul ul, .mainmenu .collapse ul ul ul.dropdown-menu{background: rgba(51,51,51,0.7);}
+.mainmenu .collapse ul ul ul ul, .mainmenu .collapse ul ul ul ul.dropdown-menu{background: rgba(51,51,51,0.7);}
+
+/******************************Drop-down menu work on hover**********************************/
+.mainmenu{background: none;border: 0 solid;margin: 0;padding: 0;min-height:20px}
+@media only screen and (min-width: 767px) {
+.mainmenu .collapse ul li{position:relative;}
+.mainmenu .collapse ul li:hover> ul{display:block}
+.mainmenu .collapse ul ul{position:absolute;top:100%;left:0;min-width:215px;display:none}
+/*******/
+.mainmenu .collapse ul ul li{position:relative}
+.mainmenu .collapse ul ul li:hover> ul{display:block}
+.mainmenu .collapse ul ul ul{position:absolute;top:0;left:100%;min-width:250px;display:none}
+/*******/
+.mainmenu .collapse ul ul ul li{position:relative}
+.mainmenu .collapse ul ul ul li:hover ul{display:block}
+.mainmenu .collapse ul ul ul ul{position:absolute;top:0;left:-100%;min-width:250px;display:none;z-index:1}
+
+}
+.navbar-brand, .navbar-nav > li > a{ text-shadow: none !important;color: #fff;font-size: 15px;padding: 12px 15px;}
+.dropdown-menu > li > a{color: #fff;font-size: 15px;padding: 12px 15px;}
+.menu_icon{left: 10px;
+position: relative;
+top: 1px;}
+.nav > li{ margin-right: 15px;}
+.navbar-nav{ position: relative;left: 110px;}
+.navbar-toggle .icon-bar{
+     background: #fff;}
+.navbar-toggle{    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #040095;}
+@media screen and (max-width:1199px)and (min-width:992px) {
+    .navbar-nav{ position: relative;left: 35px;}
+    .ts_logo{ left: 0px;}
+    .prisons_logo{ left: 0px;}
+}
+@media screen and (max-width:991px)and (min-width:768px) {
+    .navbar-nav{ position: relative;left:0px;}
+    .navbar-brand, .navbar-nav > li > a{padding: 12px 12px;}
+    .dropdown-menu > li > a{padding: 12px 12px;}
+    .nav > li {
+    margin-right: 0px;
+}
+.menu_icon{left: 5px;}
+ .ts_logo{ left: 0px;}
+    .prisons_logo{ left: 0px;}
+}
+@media screen and (max-width:767px)and (min-width:1px) {
+  .navbar-nav{ position: relative;left:0px;}
+  .navbar-collapse{ background:rgba(51,51,51,0.7); position: absolute;    width: 100%;float: left; }
+  .nav > li{ margin-right: 0px;}
+  .navbar-nav {
+    margin: 0px -15px;
+}
+.navbar-nav .open .dropdown-menu > li > a {
+    padding: 10px 30px;
+}
+}
+
+.fa-angle-double-right{ position: absolute; right: 15px;}
 #back2Top {
     width: 40px;
     line-height: 40px;

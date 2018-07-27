@@ -188,3 +188,15 @@ h2.resp-accordion { display: block; }
 
 .resp-vtabs .resp-tab-content:last-child { border-bottom: 1px solid #c1c1c1 !important; }
 }
+@media screen and (max-width:991px)and (min-width:768px) {
+    .tabs_content {width: 25% !important;}
+    .responsive_tabs_content {
+    width: 75% !important;}
+}
+
+@media screen and (max-width:768px)and (min-width:1px) {
+    .fa-angle-double-right{ display: none;}
+    .resp-vtabs .resp-tabs-container{ float: left;}
+      .responsive_tabs_content {
+    width: 100% !important;min-height: auto !important;}
+}
