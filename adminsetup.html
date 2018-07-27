@@ -20,15 +20,11 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <script src="js/jquery-1.11.1.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <!-----------------bootstrap-------------------------------->
-
 <script src="js/bootstrap.js" type="text/javascript"></script>
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
-<link href="css/bootstrap-theme.css" type="text/css" rel="stylesheet" />
-
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 <link href="css/site.css" rel="stylesheet" type="text/css"/>
-<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
-<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
 <!----navigation menu---->
 <link href="css/ace-responsive-menu.css" rel="stylesheet" type="text/css"/>
 <script src="js/ace-responsive-menu.js" type="text/javascript"></script>
@@ -36,6 +32,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <script src="js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
 <script src="js/easy-responsive-tabs.js" type="text/javascript"></script>
 <link href="css/easy-responsive-tabs.css" rel="stylesheet" type="text/css"/>
+<script src="js/commonscript.js" type="text/javascript"></script>
   
 </head>
 <body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
@@ -267,8 +264,8 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
             </div>
         </div>
        
-      <div class="gallery_banner">
-        <img src="images/gallery.jpg" alt="" class="img-responsive"/>
+<div class="gallery_banner">
+        <img src="images/banner-admin.jpg" alt="" class="img-responsive"/>
     </div>
         
         <div class="admin_wrkarea">
@@ -276,10 +273,10 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                 <h6>Administrative Setup</h6> 
                 <div id="verticalTab">
 <ul class="resp-tabs-list">
-<li>ORGANIZATION SETUP</li>
-<li>DIRECTORATE</li>
-<li>REGIONAL OFFICES</li>
-<li>TRAINING INSTITUTE</li>
+<li>ORGANIZATION SETUP </li>
+<li>DIRECTORATE </li>
+<li>REGIONAL OFFICES </li>
+<li>TRAINING INSTITUTE </li>
 </ul>
 <div class="resp-tabs-container">
 <div>
@@ -315,6 +312,17 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                 <img src="images/newspaper.png" alt=""/>
           
         </div>
+		<div class="cart" data-toggle="modal" data-target="#updates">
+          
+                <img src="images/shopping-cart.png" alt=""/>
+          
+        </div>
+        <div class="nation" data-toggle="modal" data-target="#mynation">
+          
+                <img src="images/web.png" alt=""/>
+          
+        </div>
+		   
              <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -339,8 +347,8 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
       
     </div>
   </div>
-                     <div class="modal fade" id="contact" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal fade" id="contact" role="dialog">
+    <div class="modal-dialog contact">
     
       <!-- Modal content-->
       <div class="modal-content">
@@ -364,15 +372,20 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     <label for="email" class="form_label">Message</label>
     <textarea class="form-control" id="email"></textarea>
   </div>
+                   <div class="form-group">
+    <label for="email" class="form_label">A Brief Note</label>
+    <textarea class="form-control" id="email"></textarea>
+  </div>
+  <img src="images/reload.png" class="reload" alt=""/>
   <button type="submit" class="btn btn-default contct_btn">Submit</button>
 </form> 
         </div>
       </div>
       
     </div>
-  </div>         
-               <div class="modal fade" id="newsticker" role="dialog">
-    <div class="modal-dialog">   
+  </div>   
+  <div class="modal fade" id="newsticker" role="dialog">
+    <div class="modal-dialog newsticker">   
       <!-- Modal content-->
       <div class="modal-content">
 	  <button type="button" class="close mess_close" data-dismiss="modal">&times;</button>
@@ -385,6 +398,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <li class="news-item">
 <table cellpadding="4">
 <tr>
+<td><img src="images/news.png" width="60" class="img-circle"></td>
 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
 </tr>
 </table>
@@ -392,6 +406,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <li class="news-item">
 <table cellpadding="4">
 <tr>
+<td><img src="images/to-do.png" width="60" class="img-circle"></td>
 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
 </tr>
 </table>
@@ -399,6 +414,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <li class="news-item">
 <table cellpadding="4">
 <tr>
+<td><img src="images/live.png" width="60" class="img-circle"></td>
 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
 </tr>
 </table>
@@ -406,6 +422,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <li class="news-item">
 <table cellpadding="4">
 <tr>
+<td><img src="images/news.png" width="60" class="img-circle"></td>
 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
 </tr>
 </table>
@@ -413,6 +430,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <li class="news-item">
 <table cellpadding="4">
 <tr>
+<td><img src="images/to-do.png" width="60" class="img-circle"></td>
 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
 </tr>
 </table>
@@ -420,6 +438,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <li class="news-item">
 <table cellpadding="4">
 <tr>
+<td><img src="images/live.png" width="60" class="img-circle"></td>
 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
 </tr>
 </table>
@@ -427,6 +446,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <li class="news-item">
 <table cellpadding="4">
 <tr>
+<td><img src="images/to-do.png" width="60" class="img-circle"></td>
 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
 </tr>
 </table>
@@ -438,6 +458,31 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 </div>
 
       </div>     
+    </div>
+  </div>  
+  <div class="modal fade" id="updates" role="dialog">
+    <div class="modal-dialog mynation">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+      <button type="button" class="close mess_close" data-dismiss="modal">&times;</button>
+      <div class="cart_icon">
+	    <img src="images/to-do.png" class="cart_image"/>
+		<p>Added items in the cart<p/>
+		<b>INR 840</b>
+	  </div>
+	  <div class="cart_icon margin_img">
+	    <img src="images/to-do.png" class="cart_image"/>
+		<p>Added items in the cart<p/>
+		<b>INR 840</b>
+	  </div>
+	  <div class="cart_icon margin_img">
+	    <img src="images/to-do.png" class="cart_image"/>
+		<p>Added items in the cart<p/>
+		<b>INR 840</b>
+	  </div>
+      </div>
+      
     </div>
   </div>      
         <div class="footer">
@@ -469,29 +514,6 @@ fit: true
 });
 });
 </script>
-       <script type="text/javascript">
-         $(document).ready(function () {
-             $("#respMenu").aceResponsiveMenu({
-                 resizeWidth: '750', // Set the same in Media query       
-                 animationSpeed: 'fast', //slow, medium, fast
-                 accoridonExpAll: false //Expands all the accordion menu on click
-             });
-         });
-	</script>
-  <script type="text/javascript">
-    $(function () {
-        $(".demo1").bootstrapNews({
-            newsPerPage: 3,
-            autoplay: true,
-			pauseOnHover:true,
-            direction: 'up',
-            newsTickerInterval: 4000,
-            onToDo: function () {
-                //console.log(this);
-            }
-        });
-
-    });
-</script>
+  <a id="back2Top" title="Back to top" href="#">&#10148;</a>
 </body>
 </html>

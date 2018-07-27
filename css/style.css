@@ -27,13 +27,12 @@
 
 	src: url('../fonts/glyphicons-halflings-regular.eot');
 	src: url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-		
-		url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+		url('../fonts/glyphicons-halflings-regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 body{ 
-font-family: 'Swiss721BT-Roman';font-weight: normal; font-size: 13px; color: #383838;
+font-family: 'Swiss721BT-Roman';font-weight: normal; font-size: 13px; color: #383838; line-height: 23px;
 } 
 
 .background{ width: 100%; float: left; background: #fff;}
@@ -45,8 +44,8 @@ float: right;
 position: relative;top: 3px;
 }
 .ts_prisons{width: 100%; float: left;position: relative;
-top: 20px;left: 10px;}
-.ts_prisons .prisons_txt{color:#040095;float:left; width: 100%; font-size: 35px;text-shadow: 0 1px 0 #f1f1f1, 0 1px 0 #f1f1f1, 0 0px 0 #f1f1f1, 0 2px 0 #f1f1f1, 0 4px 0 #f1f1f1, 0 6px 1px rgba(255,255,255,.1), 0 0 5px rgba(255,255,255,.1), 0 1px 3px rgba(255,255,255,.3), 0 3px 5px rgba(255,255,255,.2), 0 5px 10px rgba(255,255,255,.25), 0 10px 10px rgba(255,255,255,.2), 0 20px 20px rgba(255,255,255,.15);}.prisons_logo{ width: 100%; float: left;}
+top: 30px;left: 10px;}
+.ts_prisons .prisons_txt{text-align: center;color:#040095;float:left; width: 100%; font-size: 35px;text-shadow: 0 1px 0 #f1f1f1, 0 1px 0 #f1f1f1, 0 0px 0 #f1f1f1, 0 2px 0 #f1f1f1, 0 4px 0 #f1f1f1, 0 6px 1px rgba(255,255,255,.1), 0 0 5px rgba(255,255,255,.1), 0 1px 3px rgba(255,255,255,.3), 0 3px 5px rgba(255,255,255,.2), 0 5px 10px rgba(255,255,255,.25), 0 10px 10px rgba(255,255,255,.2), 0 20px 20px rgba(255,255,255,.15);}.prisons_logo{ width: 100%; float: left;}
 .prisons_logo .tsprisons_logo{ width: 90px; float: left;}
 .navigation{ float: left; width: 100%; background:#737373;}
 .banner{width: 100%; float: left;}
@@ -192,7 +191,7 @@ left: 50px;}
 height: 250px !important;}
 .carousel-indicators{ bottom: 0px !important;}
 
-.about_mre{ float: left; width: 100%;background:#777777b5;padding: 30px 0px;}
+.about_mre{ float: left; width: 100%;background:#7777775c;padding: 30px 0px;}
 .abt_wrkarea{float: left; width: 100%;padding: 20px 40px 30px;}
 .abt_wrkarea h6{font-family: 'Swiss721BT-Bold'; font-size: 20px;width: 100%;
 float: left; color: #040095; margin: 0px 0px 40px 0px; text-align: center;}
@@ -208,7 +207,7 @@ right: 40px;}
 
 /*-----About Us -----*/
 .inner_banner{ width: 100%; float: left;}
-.abt_wrkara{ float: left; width: 100%;margin: 40px 0px 35px;}
+.abt_wrkara{ float: left; width: 100%;margin: 30px 0px 35px;}
 .abtus_heading{float: left; width: 100%; }
 .abtus_heading h6{
     font-family: 'Swiss721BT-Bold';
@@ -299,7 +298,7 @@ left: 0px;}
 .panel-body p span{width: 100%; float: left;font-size: 13px; margin-bottom:3px;}
 .panel-info > .panel-heading{ background-image: none !important;
 
-font-size: 14px;background: #ededed !important;
+font-size: 14px;background: #eee !important;
 color: #333 !important;}
 
 .panel-body h4{ width: 100%; color: #737373; font-size: 15px; float: left;}
@@ -322,7 +321,7 @@ font-size: 24px;
 width: 100%;
 float: left;
 color: #040095;
-margin:25px 0px 0px 0px;
+margin:40px 0px 0px 0px;
 text-align: center;}
 .quick_cantct{ margin-top: 30px;}
 .contact_map{ margin-top: 30px; }
@@ -769,12 +768,12 @@ height: 200px;
 	cursor: default;
 }
 
-.floater{ right: 0px ;position: fixed;top:320px; background: #040095; z-index: 2;cursor: pointer;}
+.floater{ right: 0px ;position: fixed;top:325px; background: #040095; z-index: 2;cursor: pointer;}
 .floater img{padding: 8px;
 width: 40px;}
 .newsnote{    right: 0px;
     position: fixed;
-    top: 230px;
+    top: 245px;
     background: #040095;
     z-index: 2;cursor: pointer;}
 .newsnote img{padding: 8px;
@@ -798,8 +797,14 @@ margin-top: 0px; }
 .modal-content{padding: 20px;width: 100%;
     float: left;}
 
-.quicknote{ right: 0px ;position: fixed;top:275px; background: #040095; z-index: 2;cursor: pointer;}
+.quicknote{ right: 0px ;position: fixed;top:285px; background: #040095; z-index: 2;cursor: pointer;}
 .quicknote img{padding: 8px;
+width: 40px;}
+.cart{ right: 0px ;position: fixed;top:405px; background: #040095; z-index: 2;cursor: pointer;}
+.cart img{padding: 8px;
+width: 40px;}
+.nation{ right: 0px ;position: fixed;top:365px; background: #040095; z-index: 2;cursor: pointer;}
+.nation img{padding: 8px;
 width: 40px;}
 .qucik_form{ background: #fff; right: 0px;}
 .qucik_form p{font-family: 'Swiss721BT-Bold';font-weight: normal; padding:10px; margin: 0px;font-size: 20px; text-align: center;font-size: 20px;
@@ -892,6 +897,7 @@ text-align: center;}
 .prisons-card {
 	border: 1px solid #e6e5e5;
     border-radius: 5px;
+    margin-bottom: 25px;   
 }
 .prisons-card:hover {
     box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
@@ -927,7 +933,7 @@ ul.ddd_tabs {
 .panel-headings {padding: 10px 15px 0px !important;}
 .panel-headings h4 {position: relative;
     top: 3px; padding-bottom: 15px;}
-.horizontal_Tab {margin-top:40px !important;}
+.horizontal_Tab {margin-top:20px !important;}
 .arrow_control {    
     font-size: 20px;
     position: relative;
@@ -970,7 +976,7 @@ ul.ddd_tabs {
 
 }
 .responsive_tabs_content {
-    min-height: 290px !important;
+    min-height: 310px !important;
     width: 80% !important;
 }
 .margin_news {
@@ -983,4 +989,80 @@ ul.ddd_tabs {
     width: 50%;
     float: none !important;
     margin: 0 auto;
+}
+.mynation {
+    float: right;
+    position: relative;
+    top: 380px;
+    left: -31px;
+    width: 20%;
+}
+
+.contact {
+	float: right;
+    position: relative;
+    top: 255px;
+    left: -31px;
+    width: 30%;
+}
+.reload {
+	width: 15%;
+    margin-bottom: -50px;
+    position: relative;
+    left: 250px;
+    top: -10px;
+}
+.cart_icon {
+	width:100%;
+	float:left;
+}
+.cart_image {
+	width:50px;
+	float:left;	
+	margin-bottom:10px;
+}
+.cart_icon p {
+    width: 70%;
+    float: left;
+    position: relative;
+    margin-left: 20px;
+}
+.margin_img {
+	margin-top:10px;
+}
+.resp-vtabs .resp-tab-content {
+	margin-left: 40px;
+    margin-right: 40px;
+}
+.panel-group .panel {
+	margin-bottom:20px;
+}
+.jail_contant {
+	background: #7777774f;
+    padding: 10px;
+}
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #DDD;
+    color: #040095;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
 }
