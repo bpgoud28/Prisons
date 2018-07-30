@@ -115,7 +115,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     top: 50%;
-    width: 0
+    width: 0;
 }
 
 .timeline__content:before {
@@ -135,15 +135,18 @@
 }
 
 .timeline__content h2 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin: 0 0 .625rem
+ font-family: 'Swiss721BT-Bold';
+    font-weight: normal;
+    margin: 0 0 .625rem;
+        color: #029594;
+font-size: 15px;
 }
 
 .timeline__content p {
-    font-size: .9375rem;
+    font-size: 12px;
     line-height: 1.5;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    font-family: 'Swiss721BT-Roman'; color: #3cba54;
 }
 
 .timeline--horizontal {
@@ -322,7 +325,7 @@ background: #f1f1f1;
 }
 
 .timeline--mobile {
-    padding: 0
+    padding: 0; float: left;
 }
 
 .timeline--mobile:before {

@@ -27,9 +27,11 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 <link href="css/site.css" rel="stylesheet" type="text/css"/>
-
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
 <!----navigation menu---->
-
+<link href="css/ace-responsive-menu.css" rel="stylesheet" type="text/css"/>
+<script src="js/ace-responsive-menu.js" type="text/javascript"></script>
 <script src="js/jquery.bootstrap.newsbox.js" type="text/javascript"></script>
 <script src="js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
 <script src="js/easy-responsive-tabs.js" type="text/javascript"></script>
@@ -39,7 +41,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
 
     <div class="background">
-             <div class="header">
+        <div class="header">
             <div class="container">
                  <div class="row">
                 <div class="header_nav">
@@ -63,113 +65,161 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
             </div>
         </div>
         
-
-          
-    <div id="header-area" class="navigation">
-        
+        <div class="navigation">
             <div class="container">
-                <div class="row">
-                    <nav role="navigation" class="navbar  mainmenu">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <!-- Collection of nav links and other content for toggling -->
-                        <div id="navbarCollapse" class="collapse navbar-collapse">
-                            <ul id="fresponsive" class="nav navbar-nav dropdown">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="aboutus.html">About Us</a></li>
-                            
-                                <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Administration<i class="fa fa-angle-down menu_icon"></i></a>
-									<ul class="dropdown-menu">
-										<li><a href="adminsetup.html">Administrative Setup</a></li>
-										<li>
-											<a href="#" data-toggle="dropdown" class="dropdown-toggle">Prison Administration<i class="fa fa-angle-right menu_icon"></i></a>
-											<ul class="dropdown-menu">
-												  <li><a href="centralprison.html">Central Prison</a></li>
-                                                                                                  <li><a href="districtjail.html">District Jails</a></li>
-                                                                                                  
-                                                                                                    <li><a href="pac.html">PAC</a></li>
-                                                                                                        <li><a href="spw.html">SPW</a></li>
-                                                                                                    <li><a href="pac.html">Borstal School</a></li>			
-												
-											</ul>
-										</li>
-                                                                                <li><a href="criminaljustice.html">Criminal Justice</a></li>
-									</ul>
-								</li>
-                                <li>
+               <nav>
+        <!-- Menu Toggle btn-->
+        <div class="menu-toggle">
+            <button type="button" id="menu-btn">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Responsive Menu Structure-->
+        <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+        <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+              <li>
+                <a href="index.html">
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="aboutus.html">
+                    <span class="title">About Us</span>
+                </a> 				
+            </li>
+
+            <li>
+				<a href="">
+					<span class="title">Administration</span>
+				</a>
+				<!-- Level Two-->
+				<ul>
+					<li>
+						<a href="adminsetup.html">
+
+							Administrative Setup
+						</a>
+						<!-- Level Three-->
+						<ul>
+							<li>
+								<a href="#">Organization Setup</a>
+							</li>
+							<li>
+								<a href="#">Directorate</a>
+							</li>
+							<li>
+								<a href="#">Regional Office</a>
+							</li>
+
+						</ul>
+					</li>
+					<li>
+						<a href="">
+							Prison Administration
+						</a>
+						<!-- Level Three-->
+						<ul>
+						  <li><a href="centralprison.html">Central Prison</a></li>
+						  <li><a href="">PAC</a></li>
+						  <li><a href="">SPW</a></li>
+						  <li><a href="">Borstal School</a></li>							
+						</ul>
+					</li>
+					<li><a href="">Criminal Justice</a>
+						 <ul>
+						 <li><a href="">Quarterly UT Prisoners</a></li>
+						 <li><a href="">Security Committe</a></li>
+						 <li><a href="">Co-ordination Other Departement</a></li>
+						 </ul>
+					</li>
+
+				</ul>
+			</li>
+ 
+           <li>
                 <a href="schemes.html">
                     <span class="title">Schemes</span>
                 </a>
             </li> 
             
-            <li>
+ <li>
                 <a href="act&rules.html">
                     <span class="title">Act/Rules</span>
                 </a>
             </li> 
             <li>
                 <a href="specialrules.html">
-                   Special Rules
+                    <span class="title">Special Rules</span>
                 </a>
             </li> 
             <li>
                 <a href="gallery.html">
-                   Gallery
+                    <span class="title">Gallery</span>
                 </a>
             </li> 
             <li>
                 <a href="contact.html">
-                  Contact
+                    <span class="title">Contact</span>
                 </a>
             </li> 
-                            </ul>
-                        </div>
-                    </nav>
-                </div> 
-            </div>            
-     
-      
-    </div>
+        </ul>
+    </nav>  
+            </div>
+        </div>
        
-<div class="gallery_banner">
-        <img src="images/banner-admin.jpg" alt="" class="img-responsive"/>
+      <div class="gallery_banner">
+        <img src="images/about.png" alt="" class="img-responsive"/>
     </div>
         
-        <div class="admin_wrkarea">
-            <div class="container">
-                <h6 class="admin_headin">Administrative Setup</h6> 
-                <div id="verticalTab">
-<ul class="resp-tabs-list tabs_content">
-<li>Organization Setup <i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
-<li>Directorate <i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
-<li>Regional Offices <i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
-<li>Training Institute <i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
-</ul>
-<div class="resp-tabs-container responsive_tabs_content">
-<div>
-<p>The Telangana State Prisons Department is functioning under the control of Home Department. The Director General and Correctional Services is the Head of the Department. He is assisted by 1 Inspector General of Prisons at Headquarters and 2 Deputy Inspectors General of Prisons at Range Level. The various institutions under the control of the Prisons Department are classified into Central Prisons, District Jails, Open Prisons, Special Prison for Women and Sub Jails. They are headed by officers of different ranks.</p>
-</div>
-<div>
-<p>The Director General of Prisons & Correctional Services is the Controlling Officer of the Prisons Department. To assist the Director General of Prisons at the directorate, there is 1 Inspector General of Prisons looking after the subjects of Headquarters. Other officers working in Headquarters include Administrative Officer to Director General of Prisons,Asst. Accounts Officer</p>
-</div>
-<div>
-    <p>The Department is divided into two Ranges i.e Hyderabad Range and Warangal Ranges, each headed by Deputy Inspector General of Prisons. The headquarters of the two regions are located at Hyderabad and Warangal respectively.</p>
-    <p>The Hyderabad Range consists of (3) districts with largest number of institutions. About 50% of prison population usually been confined in the jails located in this region, while the Warangal Region have jurisdiction of 4 Districts</p>
-</div>
-<div>
-<p>The efficiency of an organization is determined by the caliber of training and motivation of the personnel manning it. This is particularly so in respect of organization that deals with human beings. Therefore, very special care and attention should be bestowed in selection and training of personnel who are to man the prison and Correctional Administration. Physical fitness and courage, leadership and man management qualities as well as balanced humane personality are essentially required for prison personnel. </p>
-</div>
-</div>
-</div>
-            </div>
-        </div>    
+            <div class="admin_wrkarea">
+                <div class="container">
+                    <h6>TS Prison Department</h6>
+                    <p class="about_page">Telangana State Prisons Department came into existence on 1st November, 1956 after the re-organization of States. Initially the Prisons Department consisted of only few Central Jails, District Jails and Sub Jails.</p>					
+                    <div id="verticalTab">
+						<ul class="resp-tabs-list tabs_content">
+						<li>About Us &rarr;</li>
+						<li>Mission &rarr;</li>
+						<li>Vision &rarr;</li>
+						<li>Goals &rarr;</li>
+						<li>Values &rarr;</li>
+						</ul>
+						<div class="resp-tabs-container responsive_tabs_content">
+						<div>
+						<p>Subsequently during 1976 in pursuance of the policy decision taken by the Government to transfer the administration of Sub Jails from the control of the Judiciary to that of the Prisons Department, the Prisons Department expanded itself into a major Department. Over a period of time, with the up gradation of some jails as District Jails and Central Jails and due to construction of new jails, the number of institutions have increased under the control of the Department. In order to improve the operational efficiency of the institutions and to manage the department effectively, the administration has been decentralized and 2 Ranges were formed namely “Hyderabad Range” with 03 Districts and “Warangal Range” with 04 Districts . With the implementation of modernization schemes, the infrastructure of the Prisons Department improved further on account of the construction of new prisons, improvement in the hygiene and sanitary conditions, medical facilities, construction of quarters for staff and introduction of new correctional programmes for the prisoners</p>
+						<p>Telangana State Prisons Department is considered as one of the most progressive Prisons Departments in the country. It has to its credit a number of far reaching reforms which were emulated by other states of the country. Among these achievements are introducing Panchayat System among prisoners, introducing Stainless Steel Utensils and Gas Cooking System in the Prisons, provision of septic toilets in place of dry type toilets in 1980, uninterrupted water supply and introducing innovative vocational training programmes for prisoners, besides providing of modern medical facilities.</p>
+						<p>In recent times, Telangana State Prisons Department has achieved the unique distinction of introducing the Video Linkage System between Prisons and Courts for the first time in the Country which enabled speedy justice to the Undertrial prisoners. </p>
+						</div>
+						<div>
+						<p>Telangana State Prisons and Correctional Services Department confines, manages and provides a safe, secure and humane environment to prisoners both under trial and convicted, by utilizing a trained professional Prison Force and providing them opportunities for re-integration in society as responsible and productive citizens and thus serve and protect the society.</p>
+						</div>
+						<div>
+						<p>Our vision is to provide a service of which the public can be proud and which will be regarded as a standard of excellence in the country. </p>
+						</div>
+						<div>
+						<b>Our principal goals are to</b>
+						<p>Keep prisoners in safe custody.</p>
+						<p>Maintain order, control, discipline and safe prison environment. </p>
+						<p>Provide decent conditions for prisoners and meet their needs, with respect to food, clothing, bedding, hygiene, sanitation and health care. </p>
+						<p>Provide positive programmes which help prisoners address their offending behavior and allow them as full and responsible a life as possible. </p>
+						<p>Help prisoners prepare for their return to the community. </p>
+						<p>Keep the prison force disciplined, motivated and professional by reinforcement with periodical training. </p>
+						<p>Deliver prison services using the resources provided by Government with maximum efficiency. </p>
+						<p>In meeting these goals, we will co-operate closely with other criminal justice agencies for development of the criminal justice system as a whole. </p>
+						</div>
+						<div>
+						<b>In seeking to realize our vision and meet our goals, we will adhere to the following values</b>
+                        <p>Integrity is fundamental to every thing we do. We will meet honesty and openness, and exercise effective stewardship of public money and assets.</p>
+						<p>Commitment by our staff and to our staff. Staff are the most important asset empowered to develop and use their skills and abilities to the full, while being held accountable for their performance. Teamwork will be encouraged. They will be treated with fairness, respect and openness. Their safety and well being will be a prime concern. </p>
+						<p>Care for prisoners. Prisoner will be treated with fairness, justice and respect as individuals. Their punishment is deprivation of liberty and they are entitled to certain recognized standards while in prison. They will be given reasons for decisions and, where possible, involved in discussions about matters effecting them. In working with prisoners, we will involve their families and others in the community as fully as possible. </p>
+						<p>Equality of Opportunity we are committed to equality of opportunity and the elimination of discrimination on improper grounds.</p>
+						<p>Innovation and Improvement are essential to success of the service, requiring the acceptance of change and the delivery of continuing improvements in quality and efficiency.</p>
+						</div>
+						</div>
+                    </div>
+                </div>
+            </div>    
         
         
         <div class="floater" data-toggle="modal" data-target="#myModal">
@@ -359,7 +409,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
       </div>
       
     </div>
-  </div>      
+  </div>         
         <div class="footer">
             <div class="container">
                 <span>
@@ -389,7 +439,15 @@ fit: true
 });
 });
 </script>
-     
+       <script type="text/javascript">
+         $(document).ready(function () {
+             $("#respMenu").aceResponsiveMenu({
+                 resizeWidth: '750', // Set the same in Media query       
+                 animationSpeed: 'fast', //slow, medium, fast
+                 accoridonExpAll: false //Expands all the accordion menu on click
+             });
+         });
+	</script>
   <script type="text/javascript">
     $(function () {
         $(".demo1").bootstrapNews({
