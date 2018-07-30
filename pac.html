@@ -107,7 +107,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                                                                                                   
                                                                                                     <li><a href="pac.html">PAC</a></li>
                                                                                                         <li><a href="spw.html">SPW</a></li>
-                                                                                                    <li><a href="pac.html">Borstal School</a></li>			
+                                                                                                    <li><a href="borstal.html">Borstal School</a></li>			
 												
 											</ul>
 										</li>
@@ -149,7 +149,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
       
     </div>
        
-<div class="gallery_banner">
+    <div class="gallery_banner">
         <img src="images/central.jpg" alt="" class="img-responsive"/>
     </div>
        
@@ -186,7 +186,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
       <div class="books book_floter">
     <div >
         <!--<span class="book1" style="position: relative;top:115px">-->
-            <img class="bookThumb book1" src="images/open-magazine.png"/>
+            <img class="bookThumb book1" src="images/open-magazine.png" data-toggle="tooltip" data-placement="left" title="NoteBook"/>
         <!--</span>-->
       
     </div>
@@ -194,27 +194,27 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 </div>
         <div class="floater" data-toggle="modal" data-target="#myModal">
            
-                <img src="images/message.png" alt=""/>
+                <img src="images/message.png" alt="" data-toggle="tooltip" data-placement="left" title="Message"/>
           
         </div>
 		<div class="quicknote" data-toggle="modal" data-target="#contact">
           
-                <img src="images/phone-call.png" alt=""/>
+                <img src="images/phone-call.png" alt="" data-toggle="tooltip" data-placement="left" title="Contact"/>
           
         </div>
 		<div class="newsnote" data-toggle="modal" data-target="#newsticker">
           
-                <img src="images/newspaper.png" alt=""/>
+                <img src="images/newspaper.png" alt="" data-toggle="tooltip" data-placement="left" title="Newsticker"/>
           
         </div>
 		<a href="index.html" class="cart">
           
-                <img src="images/shopping-cart.png" alt=""/>
+                <img src="images/shopping-cart.png" alt="" data-toggle="tooltip" data-placement="left" title="Cart"/>
           
         </a>
         <a href="index.html" class="nation">
           
-                <img src="images/doctor.png" alt=""/>
+                <img src="images/doctor.png" alt="" data-toggle="tooltip" data-placement="left" title="MyNation"/>
           
         </a>
 		   
@@ -544,7 +544,11 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
         });
     </script>
-
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
 </body>
 
 </html>
