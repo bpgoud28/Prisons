@@ -255,7 +255,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 		   
              <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog myModal">
     
       <!-- Modal content-->
       <div class="modal-content">
@@ -446,19 +446,18 @@ fit: true
 </script>
      
 <script type="text/javascript">
-
         $(document).ready(function (){
             $(".book1").flipBook({
                 lightBox:true,
                 pages:[
                     {
-                        src:"images/05.jpg",
-                        thumb:"images/05.jpg",
+                        src:"images/book1.jpg",
+                        thumb:"images/book1.jpg",
                         title:"Cover"
                     },
                     {
                         src:"",
-                        thumb:"images/book1/thumb2.jpg",
+                        thumb:"images/book1.jpg",
                         title:"Page two",
                         htmlContent:'<div style="position: relative; height: 100%;width:100%;background: rgb(255,255,255);">' +
                                
@@ -470,7 +469,7 @@ fit: true
                     },
                     {
                         src:"",
-                        thumb:"images/book1/thumb3.jpg",
+                        thumb:"images/book2.jpg",
                         title:"Page three",
                         htmlContent:'<div style="position: relative; height: 100%;width:100%;background: rgb(255,255,255);">' +
                                 '<iframe style="position: absolute;top: 200px;left:50px;box-shadow: 0 5px 20px rgba(0,0,0,.9);" width="900" height="510" src="http://www.youtube.com/embed/V3FqYsm1Lgg" frameborder="5" allowfullscreen></iframe>'+
@@ -481,101 +480,42 @@ fit: true
                                 '</div>'
                     },
                     {
-                        src:"images/book1/page4.jpg",
-                        thumb:"images/book1/thumb4.jpg"
+                        src:"images/book2.jpg",
+                        thumb:"images/book2.jpg",
                     },
                     {
-                        src:"images/book1/page5.jpg",
-                        thumb:"images/book1/thumb5.jpg",
+                        src:"images/book3.jpg",
+                        thumb:"images/book3.jpg",
                         title:"Page five"
                     },
                     {
-                        src:"images/book1/page6.jpg",
-                        thumb:"images/book1/thumb6.jpg",
+                        src:"images/book4.jpg",
+                        thumb:"images/book4.jpg",
                         title:"Page six"
                     },
                     {
-                        src:"images/book1/page7.jpg",
-                        thumb:"images/book1/thumb7.jpg"
+                        src:"images/book5.jpg",
+                        thumb:"images/book5.jpg",
                     },
                     {
-                        src:"images/book1/page8.jpg",
-                        thumb:"images/book1/thumb8.jpg",
+                        src:"images/book6.jpg",
+                        thumb:"images/book6.jpg",
                         title:"Page eight"
                     },
                     {
-                        src:"images/book1/page9.jpg",
-                        thumb:"images/book1/thumb9.jpg"
+                        src:"images/book7.jpg",
+                        thumb:"images/book7.jpg",
                     },
                     {
-                        src:"images/book1/page10.jpg",
-                        thumb:"images/book1/thumb10.jpg"
-                    },
-                    {
-                        src:"images/book1/page11.jpg",
-                        thumb:"images/book1/thumb11.jpg"
-                    },
-                    {
-                        src:"images/book1/page12.jpg",
-                        thumb:"images/book1/thumb12.jpg"
-                    },
-                    {
-                        src:"images/book1/page13.jpg",
-                        thumb:"images/book1/thumb13.jpg"
-                    },
-                    {
-                        src:"images/book1/page14.jpg",
-                        thumb:"images/book1/thumb14.jpg"
-                    },
-                    {
-                        src:"images/book1/page15.jpg",
-                        thumb:"images/book1/thumb15.jpg",
-                        title:"Page fifteen"
-                    },
-                    {
-                        src:"images/book1/page16.jpg",
-                        thumb:"images/book1/thumb16.jpg"
-                    },
-                    {
-                        src:"images/book1/page17.jpg",
-                        thumb:"images/book1/thumb17.jpg"
-                    },
-                    {
-                        src:"images/book1/page18.jpg",
-                        thumb:"images/book1/thumb18.jpg"
-                    },
-                    {
-                        src:"images/book1/page19.jpg",
-                        thumb:"images/book1/thumb19.jpg"
-                    },
-                    {
-                        src:"images/book1/page20.jpg",
-                        thumb:"images/book1/thumb20.jpg"
-                    },
-                    {
-                        src:"images/book1/page21.jpg",
-                        thumb:"images/book1/thumb21.jpg"
-                    },
-                    {
-                        src:"images/book1/page22.jpg",
-                        thumb:"images/book1/thumb22.jpg"
-                    },
-                    {
-                        src:"images/book1/page23.jpg",
-                        thumb:"images/book1/thumb23.jpg"
-                    },
-                    {
-                        src:"images/book1/page24.jpg",
-                        thumb:"images/book1/thumb24.jpg",
-                        title:"End"
+                        src:"images/book8.jpg",
+                        thumb:"images/book8.jpg",
+						title:"End"
                     }
+                    
                 ]
             });
-
-
-
         });
-    </script>
+</script>
   <script type="text/javascript">
     $(function () {
         $(".demo1").bootstrapNews({

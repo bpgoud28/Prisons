@@ -783,17 +783,30 @@ width: 40px;}
 .newsnote img{padding: 8px;
 width: 40px;}
 .dir_mess{ width: 100%;}
-.dir_mess h2{width: 100%;
-text-align: center;font-family: 'Swiss721BT-Bold';font-weight: normal;
-font-size: 20px;color: #737373;
-margin: 20px 0px;
-margin-top: 0px; }
+.dir_mess h2 {
+    text-align: center;
+    font-family: 'Swiss721BT-Bold';
+    font-weight: normal;
+    font-size: 20px;
+    color: #737373;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    top: -15px;
+}
+.myModal {
+	position:relative;
+	left:370px;
+}
 .modal-dialog{ width: 750px;}
 .director{width: 100%;}
-.director .dir_img{width: 700px;
-    float: left;
-    margin-left: 4px;
-    height: 400px;}
+.director .dir_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+	}
 .message{     float: left;
     width: 100%;
     margin-top: 30px;
