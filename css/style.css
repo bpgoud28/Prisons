@@ -797,7 +797,7 @@ width: 40px;}
 }
 .myModal {
 	position:relative;
-	left:370px;
+	left:320px;
 }
 .modal-dialog{ width: 750px;}
 .director{width: 100%;}
@@ -1016,11 +1016,11 @@ ul.ddd_tabs {
     width: 20%;
 }
 .newsticker {
-   float: right;
-position: relative;
-top: 0%;
-right: 0px;
-width: 550px;
+	float: right;
+	position: relative;
+	top: 0%;
+	right: 40px;
+	width: 550px;
 }
 .contact {
 	float: right;
