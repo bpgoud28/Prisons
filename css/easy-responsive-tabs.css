@@ -15,7 +15,7 @@ list-style: none;
 cursor: pointer;
 float: left;
 background: #136FB7;
-color:#fff; position: relative;
+color:#a5a1a1bd; position: relative;
 }
 
 .resp-tabs-container {
@@ -41,7 +41,7 @@ h2.resp-accordion {
   margin-bottom: -1px !important;
   background: #fff !important;
   color: #040095 !important;
-    font-weight: bold;
+  font-weight: bold !important;
 }
 
 .resp-tab-active {
@@ -134,7 +134,24 @@ h2.resp-tab-active span.resp-arrow {
   border-right: 6px solid transparent;
   border-bottom: 12px solid #9B9797;
 }
-
+.heading_tab {
+    margin-left:30px;
+    margin-top: -5px;
+    font-size: 24px;
+    color: #ffc400c4;
+    margin-bottom: -5px;	
+}
+.p_tag {
+    font-family: 'Swiss721BT-Roman';
+    font-weight: normal;
+    font-size: 13px;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height:2;	
+}
+.b_tag {
+	margin-left:30px;
+}
 /*-----------Accordion styles-----------*/
 
 h2.resp-tab-active { background: #fff !important; }
