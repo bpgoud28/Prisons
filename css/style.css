@@ -301,11 +301,8 @@ left: 5px;}
 .panel-body p{width: 100%; float: left; font-size: 13px;}
 .panel-body p span{width: 100%; float: left;font-size: 14px; margin-bottom:5px;}
 .panel-info > .panel-heading{ background-image: none !important;
-
 font-size: 14px;background: #0302950d !important;
 color: #333 !important;}
-
-.panel-body h4{ width: 100%; color: #737373; font-size: 15px; float: left;}
 .highlight{background: #136FB7 !important; color: #fff !important;}
 .contactusworkarea {
   box-shadow: 0 0 10px rgba(0,0,0,0.6);
@@ -371,7 +368,7 @@ height: 200px;
   float: left;
   font-size: 13px;
   margin: 0 12px 0 0;
-  padding: 5px 15px;
+  padding: 12px;
   text-align: center;
   text-decoration: none;
  -webkit-border-radius: 3px;
@@ -845,8 +842,6 @@ border: none;
 padding: 5px 15px;margin: 7px 0px 20px 3px;}
 .contct_btn:hover{ background: #d0a669; color: #fff;}
 
-
-
 @media screen and (max-width:1199px)and (min-width:992px) {
     .imgContainer{width: 28%;}
 }
@@ -860,7 +855,10 @@ padding: 5px 15px;margin: 7px 0px 20px 3px;}
 width: 100%;
 left: 0px;
 margin-bottom: 30px;}
- .message{ width: 100%; padding-left: 0px; min-height: auto;}
+ .message{ width: 100%; padding-left: 0px; min-height: auto; min-height: 250px;
+    margin: 0px;
+    max-height: 250px;
+    overflow: scroll; }
   .modal-dialog{ width: 95% !important;}
  .panel-group .panel{ margin: 15px 0px}
  .imgContainer {
